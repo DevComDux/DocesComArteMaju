@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description"
+        content="Doces com Arte Maju - Confeitaria artesanal com bolos, tortas, doces gourmet e muito mais. Encomende já!">
+    <meta name="keywords"
+        content="confeitaria, doces artesanais, bolos, tortas, cupcakes, brigadeiros, doces gourmet, bem-casado, pão de mel">
+    <meta name="author" content="Doces com Arte Maju">
+    <title>Doces com Arte Maju | Confeitaria Artesanal</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="shortcut icon" href="assets/img/chapeu.png" type="image/png">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <div class="logo" onclick="location.href='#inicio'">
+                <img src="assets/img/logo_nova.png" height="50px" width="50px" alt="">
+                <span class="logo-line">Doces com Arte Maju</span>
+            </div>
+            <div class="direita">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                    <li><a href="#duvidas" class="nav-link">Dúvidas</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#contatos" class="nav-link">Contatos</a></li>
+                </ul>
+                <div class="btn-cart">
+                    <button class="cart-btn" id="cartBtn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                    <button class="mobile-menu-btn" id="menuToggle"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content" data-aos="fade-right">
+                    <h1>Doces que <span>encantam</span><br>e contam histórias</h1>
+                    <p>Na Doces com Arte Maju, cada criação é feita à mão com ingredientes selecionados, com carinho e
+                        com paixão. Transformamos seus momentos especiais em memórias doces e inesquecíveis.</p>
+                    <div class="hero-buttons">
+                        <a href="#produtos" class="btn-primary"><i class="fas fa-shopping-bag"></i> Ver Produtos</a>
+                        <a href="https://wa.me/5561981123563?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido"
+                            class="btn-outline" target="_blank"><i class="fab fa-whatsapp"></i> Encomendar Agora</a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left">
+                    <div class="image">
+                        <img src="assets/img/img1.png" alt="Imagem">
+                    </div>
+                    <div class="hero-badge"><i class="fas fa-star"></i> +500 clientes satisfeitos</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">NOSSOS PRODUTOS</span>
+                    <h2 class="section-title">Delícias exclusivas</h2>
+                    <p class="section-subtitle">Feitas com ingredientes premium e muito amor para tornar seu momento
+                        ainda mais especial</p>
+                </div>
+                <div class="category-tabs" id="categoryTabs"></div>
+                <div class="products-grid" id="productsGrid"></div>
+            </div>
+        </section>
+
+        <section id="duvidas" style="background: #F5F9F8;">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title">Dúvidas frequentes</h2>
+                    <p class="section-subtitle">Tire suas principais dúvidas sobre nossos produtos e serviços</p>
+                </div>
+                <div class="faq-grid" id="faqContainer"></div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="container about-grid">
+                <div class="about-content" data-aos="fade-right">
+                    <span class="section-tag">NOSSA HISTÓRIA</span>
+                    <h2 class="section-title" style="text-align: left;">Há mais de 10 anos adoçando momentos especiais
+                    </h2>
+                    <p>A Doces com Arte Maju nasceu do sonho da Maju de transformar momentos simples em lembranças
+                        inesquecíveis, criando doces que são verdadeiras obras de arte comestíveis. Cada receita é
+                        cuidadosamente testada e aperfeiçoada para oferecer o equilíbrio perfeito entre sabor, textura e
+                        uma apresentação encantadora.</p>
+                    <p>Nossa missão é tornar cada celebração ainda mais especial, com um atendimento acolhedor e
+                        produtos que encantam tanto os olhos quanto o paladar.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">+10</div>
+                            <div class="stat-label">Anos de experiência</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">+500</div>
+                            <div class="stat-label">Clientes satisfeitos</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">+50</div>
+                            <div class="stat-label">Receitas exclusivas</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="assets/img/img2.png" alt="Imagem" id="aboutSlider">
+                </div>
+            </div>
+        </section>
+
+        <section id="contatos" style="background: #F5F9F8;">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">FALE CONOSCO</span>
+                    <h2 class="section-title">Entre em contato</h2>
+                    <p class="section-subtitle">Estamos prontos para atender você e tirar todas as suas dúvidas</p>
+                </div>
+                <div class="contact-grid">
+                    <a href="https://wa.me/5561981123563?text=Olá!%20Vim%20do%20site%20e%20gostaria%20de%20fazer%20um%20pedido"
+                        class="contact-link" target="_blank">
+                        <div class="contact-card" data-aos="fade-up">
+                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                            <h3>WhatsApp</h3>
+                            <p class="contact-info">(61) 9 8112-3563</p>
+                            <p class="contact-text">Resposta rápida e atendimento personalizado</p>
+                        </div>
+                    </a>
+                    <a href="https://instagram.com/docescomarte_maju" class="contact-link" target="_blank">
+                        <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+                            <h3>Instagram</h3>
+                            <p class="contact-info">@docescomarte_maju</p>
+                            <p class="contact-text">Acompanhe nossas criações e novidades</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/img/logo_nova.png" height="50px" width="50px" alt="">
+                    <span class="logo-line">Doces com Arte Maju</span>
+                </div>
+                <div class="footer-social">
+                    <a href="https://wa.me/5561981123563" target="_blank"><i class="fab fa-whatsapp"></i></a><a
+                        href="https://instagram.com/docescomarte_maju" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Confeitaria artesanal</p>
+                <p>© 2025 Doces com Arte Maju - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5561981123563?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20na%20Doces%20com%20Arte%20Maju"
+        class="floating-wpp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <!-- Modal do Carrinho -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content modal-cart">
+            <span class="modal-close" id="closeCartModal">&times;</span>
+            <div class="modal-header">
+                <h3><i class="fas fa-shopping-cart"></i> Meu Carrinho</h3>
+            </div>
+            <div class="modal-body">
+                <div id="cartItemsList" class="cart-items"></div>
+                <div id="cartTotal" class="cart-total">Total: R$ 0,00</div>
+                <div class="delivery-option">
+                    <label><input type="radio" name="delivery" value="pickup" checked> Retirada no local
+                        (Grátis)</label>
+                    <label><input type="radio" name="delivery" value="delivery"> Frete</label>
+                </div>
+                <div id="freightWarning" class="freight-warning" style="display: none;">
+                    <i class="fas fa-truck"></i> Taxa de entrega será acrescentada ao total do pedido.
+                </div>
+                <button id="checkoutWhatsApp" class="btn-primary btn-encomendar"><i class="fab fa-whatsapp"></i>
+                    Encomendar via WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal do Produto -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" id="closeProductModal">&times;</span>
+            <div class="modal-header">
+                <h3 id="modalProductName"></h3>
+            </div>
+            <div class="modal-body">
+                <form id="productForm">
+                    <input type="hidden" id="modalProductId">
+                    <div class="form-group" id="doceGroup" style="display:none;">
+                        <label>Doce:</label>
+                        <select id="doceSelect">
+                            <option value="">Selecione o doce</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="saborGroup">
+                        <label>Sabor:</label>
+                        <select id="saborSelect" required></select>
+                    </div>
+                    <div class="form-group" id="massaGroup" style="display:none;">
+                        <label>Massa:</label>
+                        <select id="massaSelect">
+                            <option value="">Selecione a massa</option>
+                            <option value="CHOCOLATE">CHOCOLATE</option>
+                            <option value="BAUNILHA">BAUNILHA</option>
+                            <option value="AMANTEIGADA">AMANTEIGADA</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="kgGroup" style="display:none;">
+                        <label>Quantidade (KG):</label>
+                        <select id="kgSelect">
+                            <option value="">Selecione a quantidade</option>
+                            <option value="0.5">500 G</option>
+                            <option value="1">1 KG</option>
+                            <option value="2">2 KG</option>
+                            <option value="3">3 KG</option>
+                            <option value="4">4 KG</option>
+                            <option value="5">5 KG</option>
+                            <option value="6">6 KG</option>
+                            <option value="7">7 KG</option>
+                            <option value="8">8 KG</option>
+                            <option value="9">9 KG</option>
+                            <option value="10">10 KG</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="unidadesGroup" style="display:none;">
+                        <label>Quantidade (Unidades):</label>
+                        <select id="unidadesSelect"></select>
+                    </div>
+                    <div class="form-group" id="tamanhoGroup" style="display:none;">
+                        <label>Tamanho:</label>
+                        <select id="tamanhoSelect">
+                            <option value="">Selecione o tamanho</option>
+                            <option value="MINI">MINI</option>
+                            <option value="PEQUENO">PEQUENO</option>
+                            <option value="GRANDE">GRANDE</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="decoracaoGroup" style="display:none;">
+                        <label>Decorado:</label>
+                        <select id="decoracaoSelect">
+                            <option value="">Selecione</option>
+                            <option value="SIM">SIM</option>
+                            <option value="NAO">NÃO</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width:100%;"><i class="fas fa-cart-plus"></i>
+                        Adicionar ao Carrinho</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>
