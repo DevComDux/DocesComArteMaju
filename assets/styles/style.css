@@ -33,6 +33,7 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     touch-action: pan-y;
+    width: 100%;
 }
 
 .container {
@@ -49,6 +50,7 @@ body {
     top: 0;
     z-index: 1000;
     transition: all 0.3s ease;
+    width: 100%;
 }
 
 .header.scrolled {
@@ -394,6 +396,10 @@ body {
     color: var(--gray);
     margin-bottom: 2rem;
     line-height: 1.6;
+}
+
+.hero-content p span{
+    font-weight: 600;
 }
 
 .hero-buttons {

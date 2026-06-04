@@ -53,8 +53,8 @@
             <div class="container hero-grid">
                 <div class="hero-content" data-aos="fade-right">
                     <h1>Doces que <span>encantam</span><br>e contam histórias</h1>
-                    <p>Na Doces com Arte Maju, cada criação é feita à mão com ingredientes selecionados, com carinho e
-                        com paixão. Transformamos seus momentos especiais em memórias doces e inesquecíveis.</p>
+                    <p>Na <span>Doces com Arte Maju</span>, cada criação é cake designer, com ingredientes selecionados,
+                        com carinho e amor. Transformamos seus momentos especiais em memórias doces e inesquecíveis.</p>
                     <div class="hero-buttons">
                         <a href="#produtos" class="btn-primary"><i class="fas fa-shopping-bag"></i> Ver Produtos</a>
                         <a href="https://wa.me/5561981123563?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido"
@@ -74,8 +74,8 @@
             <div class="container">
                 <div class="section-header" data-aos="fade-up">
                     <span class="section-tag">NOSSOS PRODUTOS</span>
-                    <h2 class="section-title">Delícias exclusivas</h2>
-                    <p class="section-subtitle">Feitas com ingredientes premium e muito amor para tornar seu momento
+                    <h2 class="section-title">Delícias criativas e exclusivas</h2>
+                    <p class="section-subtitle">Feitas com ingredientes premium para tornar seu momento
                         ainda mais especial</p>
                 </div>
                 <div class="category-tabs" id="categoryTabs"></div>
@@ -196,7 +196,7 @@
                     <label><input type="radio" name="delivery" value="delivery"> Frete</label>
                 </div>
                 <div id="freightWarning" class="freight-warning" style="display: none;">
-                    <i class="fas fa-truck"></i> Taxa de entrega será acrescentada ao total do pedido.
+                    <i class="fas fa-truck"></i> Taxa de entrega será combinada ao final do pedido no WhatsApp.
                 </div>
                 <button id="checkoutWhatsApp" class="btn-primary btn-encomendar"><i class="fab fa-whatsapp"></i>
                     Encomendar via WhatsApp</button>
@@ -220,19 +220,6 @@
                             <option value="">Selecione o doce</option>
                         </select>
                     </div>
-                    <div class="form-group" id="saborGroup">
-                        <label>Sabor:</label>
-                        <select id="saborSelect" required></select>
-                    </div>
-                    <div class="form-group" id="massaGroup" style="display:none;">
-                        <label>Massa:</label>
-                        <select id="massaSelect">
-                            <option value="">Selecione a massa</option>
-                            <option value="CHOCOLATE">CHOCOLATE</option>
-                            <option value="BAUNILHA">BAUNILHA</option>
-                            <option value="AMANTEIGADA">AMANTEIGADA</option>
-                        </select>
-                    </div>
                     <div class="form-group" id="kgGroup" style="display:none;">
                         <label>Quantidade (KG):</label>
                         <select id="kgSelect">
@@ -248,6 +235,36 @@
                             <option value="8">8 KG</option>
                             <option value="9">9 KG</option>
                             <option value="10">10 KG</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="saborGroup">
+                        <label>Sabor:</label>
+                        <select id="saborSelect" required></select>
+                    </div>
+                    <div class="form-group" id="massaGroup" style="display:none;">
+                        <label>Massa:</label>
+                        <select id="massaSelect">
+                            <option value="">Selecione a massa</option>
+                            <option value="CHOCOLATE">CHOCOLATE</option>
+                            <option value="BAUNILHA">BAUNILHA</option>
+                            <option value="AMANTEIGADA">AMANTEIGADA</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="coberturaGroup" style="display:none;">
+                        <label>Cobertura:</label>
+                        <select id="coberturaSelect">
+                            <option value="">Selecione a cobertura</option>
+                            <option value="CHANTILLY">CHANTILLY</option>
+                            <option value="COPA">COPA</option>
+                            <option value="A DEFINIR">A DEFINIR</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="decoracaoBoloGroup" style="display:none;">
+                        <label>Decoração:</label>
+                        <select id="decoracaoBoloSelect">
+                            <option value="">Selecione a decoração</option>
+                            <option value="TRADICIONAL">TRADICIONAL</option>
+                            <option value="PERSONALIZADO">PERSONALIZADO</option>
                         </select>
                     </div>
                     <div class="form-group" id="unidadesGroup" style="display:none;">
@@ -281,4 +298,5 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/javascript/script.js"></script>
 </body>
+
 </html>
