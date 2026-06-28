@@ -98,7 +98,7 @@
             <div class="container about-grid">
                 <div class="about-content" data-aos="fade-right">
                     <span class="section-tag">NOSSA HISTÓRIA</span>
-                    <h2 class="section-title" style="text-align: left;">Há mais de 10 anos adoçando momentos especiais
+                    <h2 class="section-title" style="text-align: left;">Há mais de 10 anos adoçando a vida e proporcionando momentos especiais
                     </h2>
                     <p>A Doces com Arte Maju nasceu do sonho da Maju de transformar momentos simples em lembranças
                         inesquecíveis, criando doces que são verdadeiras obras de arte comestíveis. Cada receita é
@@ -198,6 +198,19 @@
                 <div id="freightWarning" class="freight-warning" style="display: none;">
                     <i class="fas fa-truck"></i> Taxa de entrega será combinada ao final do pedido no WhatsApp.
                 </div>
+                <div class="form-group">
+                    <label for="deliveryDate">
+                        Data do evento (entrega/retirada)
+                    </label>
+
+                    <div id="dateError" class="field-error"></div>
+
+                    <input type="date" id="deliveryDate" required>
+
+                    <small style="color: var(--gray);">
+                        Pedidos devem ser agendados com pelo menos 5 dias de antecedência.
+                    </small>
+                </div>
                 <button id="checkoutWhatsApp" class="btn-primary btn-encomendar"><i class="fab fa-whatsapp"></i>
                     Encomendar via WhatsApp</button>
             </div>
@@ -248,6 +261,7 @@
                             <option value="CHOCOLATE">CHOCOLATE</option>
                             <option value="BAUNILHA">BAUNILHA</option>
                             <option value="AMANTEIGADA">AMANTEIGADA</option>
+                            <option value="COMUM">COMUM</option>
                         </select>
                     </div>
                     <div class="form-group" id="coberturaGroup" style="display:none;">
@@ -284,8 +298,8 @@
                         <label>Decorado:</label>
                         <select id="decoracaoSelect">
                             <option value="">Selecione</option>
-                            <option value="SIM">SIM</option>
-                            <option value="NAO">NÃO</option>
+                            <option value="SIM">SIM (A definir)</option>
+                            <option value="NAO">NÃO (Tradicional)</option>
                         </select>
                     </div>
                     <button type="submit" class="btn-primary" style="width:100%;"><i class="fas fa-cart-plus"></i>

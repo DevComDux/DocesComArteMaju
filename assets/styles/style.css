@@ -352,6 +352,18 @@ body {
     color: #856404;
 }
 
+.field-error {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: none;
+}
+
+.input-error {
+    border: 2px solid #e74c3c !important;
+}
+
 /* Ball animation */
 .ball-animation {
     position: fixed;

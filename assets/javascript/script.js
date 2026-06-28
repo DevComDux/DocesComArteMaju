@@ -3,16 +3,16 @@ AOS.init({ duration: 800, once: true, offset: 100 });
 // ==================== DADOS DOS PRODUTOS COM SABORES ====================
 const produtosCompletos = [
     { id: "torta_tradicional", nome: "Torta Tradicional", precoKg: 65, categoria: "tortas", imagens: ["assets/img/5.jpg", "assets/img/6.jpg", "assets/img/7.jpg"], temMassa: true, temKg: true, sabores: ["BRIGADEIRO", "PRESTÍGIO", "DOIS BRIGADEIROS", "ABACAXI C BRIGADEIRO BRANCO", "PÊSSEGO COM BRIGADEIRO BRANCO", "AMEIXA COM BRIGADEIRO BRANCO"] },
-    { id: "torta_trufada", nome: "Torta Trufada", precoKg: 75, categoria: "tortas", imagens: ["assets/img/8.jpg", "assets/img/9.jpg", "assets/img/10.jpg", "assets/img/11.jpg"], temMassa: true, temKg: true, sabores: ["NEUTRO (SEM OVO E SEM LEITE)", "MESCLADA DE MARSHMALLOW COM BABA DE MOÇA", "STROGONOFF DE DAMASCO", "STROGONOFF DE NOZES", "STROGONOFF DE CASTANHA PARÁ", "TRUFADA COM DOIS CHOCOLATES (BRANCO E PRETO)", "CHOCOLATE BRANCO COM MORANGO", "CARAMELO COM MORANGO", "CARAMELO COM CASTANHA PARÁ", "CREAM CHEESE", "TRUFADO BRIGADEIRO CROCANTE DE AMENDOIM", "TRUFADO DE LEITE NINHO", "LEITE NINHO COM MORANGO", "LEITE NINHO COM NUTELLA", "LEITE NINHO COM ABACAXI", "LEITE NINHO COM FLOCOS DE CHOCOLATE", "4 LEITES", "TORTA XADREZ", "AMEIXA COM DOCE DE LEITE", "SONHO DE VALSA", "OURO BRANCO", "ALPINO", "SUFLAIR", "FLORESTA NEGRA", "NEGRESCO", "OREO", "BABA DE MOÇA COM OU SEM FRUTAS", "FRUTAS VERMELHAS", "FRUTAS AMARELAS", "FRUTAS VERDES", "CHANTININHO"] },
+    { id: "torta_trufada", nome: "Torta Trufada", precoKg: 75, categoria: "tortas", imagens: ["assets/img/8.jpg", "assets/img/9.jpg", "assets/img/10.jpg", "assets/img/11.jpg"], temMassa: true, temKg: true, sabores: ["NEUTRO (SEM OVO E SEM LEITE)", "MESCLADA DE MARSHMALLOW COM BABA DE MOÇA", "STROGONOFF DE DAMASCO", "STROGONOFF DE NOZES", "STROGONOFF DE CASTANHA PARÁ", "TRUFADA DOIS AMORES (CHOCOLATE BRANCO E PRETO)", "CHOCOLATE BRANCO COM MORANGO", "CARAMELO COM MORANGO", "CARAMELO COM CASTANHA PARÁ", "CREAM CHEESE", "TRUFADO BRIGADEIRO CROCANTE DE AMENDOIM", "TRUFADO DE LEITE NINHO", "LEITE NINHO COM MORANGO", "LEITE NINHO COM NUTELLA", "LEITE NINHO COM ABACAXI", "LEITE NINHO COM FLOCOS DE CHOCOLATE", "4 LEITES", "TORTA XADREZ", "AMEIXA COM DOCE DE LEITE", "SONHO DE VALSA", "OURO BRANCO", "ALPINO", "SUFLAIR", "FLORESTA NEGRA", "NEGRESCO", "OREO", "BABA DE MOÇA COM OU SEM FRUTAS", "FRUTAS VERMELHAS", "FRUTAS AMARELAS", "FRUTAS VERDES", "CHANTININHO"] },
     { id: "tortas_famosas", nome: "Tortas Famosas e Personalizadas", precoBase: 80, categoria: "tortas", imagens: ["assets/img/12.jpg", "assets/img/13.jpg", "assets/img/14.jpg"], temMassa: true, temKg: true, sabores: ["KIT KAT", "FERREIRO ROCHÊ", "RED VELVET", "DIET", "SEM GLÚTEN", "SEM LACTOSE", "NAD CAKE", "PASTA AMERICANA", "PASTA LEITE NINHO"], precosEspeciais: { "KIT KAT": 80, "FERREIRO ROCHÊ": 80, "DIET": 80, "SEM GLÚTEN": 80, "SEM LACTOSE": 80, "NAD CAKE": 95, "PASTA AMERICANA": 130, "PASTA LEITE NINHO": 130 } },
     { id: "bolo_tradicional", nome: "Bolo Tradicional Decorado", precoKg: 65, categoria: "tortas", imagens: ["assets/img/15.jpg", "assets/img/16.jpg", "assets/img/17.jpg"], temMassa: true, temKg: true, sabores: ["BRIGADEIRO", "PRESTÍGIO", "DOIS BRIGADEIROS", "ABACAXI C BRIGADEIRO BRANCO", "PÊSSEGO COM BRIGADEIRO BRANCO", "AMEIXA COM BRIGADEIRO BRANCO"] },
     { id: "bolo_especial", nome: "Bolo Especial", precoKg: 75, categoria: "bolos", imagens: ["assets/img/18.jpg", "assets/img/19.jpg", "assets/img/20.jpg"], temMassa: true, temKg: true, sabores: ["NEUTRO (SEM OVO E SEM LEITE)", "MESCLADA DE MARSHMALLOW COM BABA DE MOÇA", "STROGONOFF DE DAMASCO", "STROGONOFF DE NOZES", "STROGONOFF DE CASTANHA PARÁ", "TRUFADA COM DOIS CHOCOLATES (BRANCO E PRETO)", "CHOCOLATE BRANCO COM MORANGO", "CARAMELO COM MORANGO", "CARAMELO COM CASTANHA PARÁ", "CREAM CHEESE", "TRUFADO BRIGADEIRO CROCANTE DE AMENDOIM", "TRUFADO DE LEITE NINHO", "LEITE NINHO COM MORANGO", "LEITE NINHO COM NUTELLA", "LEITE NINHO COM ABACAXI", "LEITE NINHO COM FLOCOS DE CHOCOLATE", "4 LEITES", "TORTA XADREZ", "AMEIXA COM DOCE DE LEITE", "SONHO DE VALSA", "OURO BRANCO", "ALPINO", "SUFLAIR", "FLORESTA NEGRA", "NEGRESCO", "OREO", "BABA DE MOÇA COM OU SEM FRUTAS", "FRUTAS VERMELHAS", "FRUTAS AMARELAS", "FRUTAS VERDES", "CHANTININHO"] },
     { id: "sobremesas", nome: "Sobremesas", precoKg: 85, categoria: "sobremesas", imagens: ["assets/img/21.jpg", "assets/img/22.jpg", "assets/img/23.jpg"], temMassa: false, temKg: true, sabores: ["BANOFFE", "DELÍCIA DE UVA VERDE", "SENSAÇÃO DE MORANGO"] },
-    { id: "cento_gourmet", nome: "Cento de Doces Gourmet", precoCento: 180, categoria: "doces", imagens: ["assets/img/24.jpg", "assets/img/25.jpg", "assets/img/26.jpg", "assets/img/27.jpg"], temUnidades: true, unidadesMax: 5, step: 1, sabores: ["BRIGADEIRO 50% CACAU", "MENTA", "CAFÉ", "CAJUZINHO", "BEIJINHO", "OLHO DE SOBRA", "CHURROS", "CARAMELO", "CASADINHO", "NAPOLITANO", "ROMEU JULIETA QUEIJO COM GOIABADA", "MORANGO", "LARANJA", "LIMÃO", "MARACUJÁ", "CASTANHA DE CAJU", "NEGRESCO", "OVOMALTINE", "LEITE NINHO", "LEITE NINHO COM NUTELLA"] },
-    { id: "cento_finos", nome: "Doces Finos", precoCento: 3, categoria: "doces", imagens: ["assets/img/28.jpg", "assets/img/44.jpg", "assets/img/45.jpg", "assets/img/46.jpg", "assets/img/47.jpg", "assets/img/48.jpg"], temDoce: true, temUnidades: true, unidadesMax: 9, unidadesPersonalizadas: [25, 30, 40, 50, 60, 70, 80, 90, 100], sabores: ["CASTANHA DE CAJU", "CASTANHA DO PARÁ", "NOZES", "AMÊNDOAS", "MACADÂMIA", "DAMASCO", "BLUEBURI", "CEREJA", "MORANGO", "UVA", "AMORA", "TÂMARA"], tiposDoces: ["BRIGADEIROS GOURMET", "BOMBONS FINOS", "TRUFAS", "PASTELZINHO DE LEITE NINHO RECHEADO", "TACINHA DE CHOCOLATE"] },
+    { id: "cento_gourmet", nome: "Doces Gourmet", precoUnit: 1.80, categoria: "doces", imagens: ["assets/img/24.jpg", "assets/img/25.jpg", "assets/img/26.jpg", "assets/img/27.jpg"], temUnidades: true, unidadesPersonalizadas: [25, 50, 100], sabores: ["BRIGADEIRO 50% CACAU", "MENTA", "CAFÉ", "CAJUZINHO", "BEIJINHO", "OLHO DE SOGRA", "CHURROS", "CARAMELO", "CASADINHO", "NAPOLITANO", "ROMEU JULIETA QUEIJO COM GOIABADA", "MORANGO", "LARANJA", "LIMÃO", "MARACUJÁ", "NEGRESCO", "OVOMALTINE", "LEITE NINHO", "LEITE NINHO COM NUTELLA"] },
+    { id: "cento_finos", nome: "Doces Finos", precoCento: 3, categoria: "doces", imagens: ["assets/img/28.jpg", "assets/img/44.jpg", "assets/img/45.jpg", "assets/img/46.jpg", "assets/img/47.jpg", "assets/img/48.jpg"], temDoce: true, temUnidades: true, unidadesMax: 9, unidadesPersonalizadas: [25, 50, 100], sabores: ["CASTANHA DE CAJU", "CASTANHA DO PARÁ", "NOZES", "AMÊNDOAS", "MACADÂMIA", "DAMASCO", "BLUEBURI", "CEREJA", "MORANGO", "UVA", "AMORA", "TÂMARA"], tiposDoces: ["BRIGADEIROS GOURMET", "BOMBONS FINOS", "TRUFAS", "PASTELZINHO DE LEITE NINHO RECHEADO", "TACINHA DE CHOCOLATE"] },
     { id: "cupcake", nome: "Cupcake", precoUnit: 8, categoria: "individual", imagens: ["assets/img/32.jpg", "assets/img/33.jpg"], temMassa: false, temUnidades: true, unidadesMax: 100, step: 10, sabores: ["BRIGADEIRO", "PRESTÍGIO", "DOIS BRIGADEIROS", "ABACAXI C BRIGADEIRO BRANCO", "PÊSSEGO COM BRIGADEIRO BRANCO", "AMEIXA COM BRIGADEIRO BRANCO"] },
     { id: "bolo_pote", nome: "Bolo no Pote", precoUnit: 7, categoria: "individual", imagens: ["assets/img/34.jpg", "assets/img/35.jpg", "assets/img/36.jpg"], temMassa: false, temUnidades: true, unidadesMax: 100, step: 10, sabores: ["BRIGADEIRO", "PRESTÍGIO", "DOIS BRIGADEIROS", "ABACAXI C BRIGADEIRO BRANCO", "PÊSSEGO COM BRIGADEIRO BRANCO", "AMEIXA COM BRIGADEIRO BRANCO"] },
-    { id: "pao_mel", nome: "Pão de Mel", precoMini: 4, precoPequeno: 5, precoGrande: 7, categoria: "individual", imagens: ["assets/img/37.jpg"], temUnidades: true, unidadesMax: 100, step: 10, temTamanho: true, temDecoracao: true, sabores: [] },
+    { id: "pao_mel", nome: "Pão de Mel", precoMini: 4, precoPequeno: 5, precoGrande: 7, categoria: "individual", imagens: ["assets/img/37.jpg"], temUnidades: true, unidadesMax: 100, step: 10, temTamanho: true, temDecoracao: true, sabores: ["DOCE DE LEITE", "BRIGADEIRO PRETO", "PRESTÍGIO", "CAFÉ"] },
     { id: "bem_casado", nome: "Bem-Casado", precoUnit: 8, categoria: "individual", imagens: ["assets/img/38.jpg"], temUnidades: true, unidadesMax: 100, step: 10, sabores: [] },
     { id: "alfajor", nome: "Alfajor", precoUnit: 7, categoria: "individual", imagens: ["assets/img/39.jpg"], temUnidades: true, unidadesMax: 100, step: 10, sabores: [] },
     { id: "pirulitos", nome: "Pirulitos de Chocolate", precoUnit: 7, categoria: "individual", imagens: ["assets/img/40.jpg"], temUnidades: true, unidadesMax: 100, step: 10, sabores: [] },
@@ -89,9 +89,12 @@ function renderCart() {
             }
         } else if (item.unidades) {
             quantidadeExibida = item.unidades;
-            unidadeMedida = item.nome.toLowerCase().includes('cento')
-                ? 'CENTO(S)'
-                : 'UNID';
+
+            if (item.id === "cento_gourmet" || item.id === "cento_finos") {
+                unidadeMedida = "UNIDADES";
+            } else {
+                unidadeMedida = "UNID";
+            }
         }
 
         return `
@@ -249,12 +252,6 @@ function openProductModal(produto) {
         } else {
             unidadesGroup.style.display = 'none';
         }
-        if (produto.unidadesMax === 5) {
-            unidadesSelect.innerHTML = '';
-            for (let i = 1; i <= 5; i++) {
-                unidadesSelect.innerHTML += `<option value="${i}">${i} cento(s)</option>`;
-            }
-        }
     } else {
         unidadesGroup.style.display = 'none';
     }
@@ -264,7 +261,33 @@ function openProductModal(produto) {
     tamanhoGroup.style.display = produto.temTamanho ? 'block' : 'none';
 
     const decoracaoGroup = document.getElementById('decoracaoGroup');
-    decoracaoGroup.style.display = produto.temDecoracao ? 'block' : 'none';
+    const tamanhoSelect = document.getElementById('tamanhoSelect');
+    const decoracaoSelect = document.getElementById('decoracaoSelect');
+
+    if (produto.id === "pao_mel") {
+        decoracaoGroup.style.display = "none";
+        decoracaoSelect.required = false;
+    } else {
+        decoracaoGroup.style.display = produto.temDecoracao ? "block" : "none";
+        decoracaoSelect.required = produto.temDecoracao;
+    }
+
+    if (produto.id === "pao_mel") {
+
+        tamanhoSelect.addEventListener("change", function () {
+
+            if (this.value === "PEQUENO") {
+                decoracaoGroup.style.display = "block";
+                decoracaoSelect.required = true;
+            } else {
+                decoracaoGroup.style.display = "none";
+                decoracaoSelect.required = false;
+                decoracaoSelect.value = "";
+            }
+
+        });
+
+    }
 
     document.getElementById('doceSelect').required = produto.temDoce;
     document.getElementById('decoracaoSelect').required = produto.temDecoracao;
@@ -310,11 +333,7 @@ function calculateProductPrice(produto, sabor, massa, kg, unidades, tamanho, dec
 
     // PRODUTOS POR CENTO / UNIDADE
     else if (produto.temUnidades && unidades) {
-        if (produto.precoCento) {
-            preco = produto.precoCento * parseInt(unidades);
-        } else if (produto.precoUnit) {
-            preco = produto.precoUnit * parseInt(unidades);
-        }
+        preco = (produto.precoUnit || produto.precoCento) * parseInt(unidades);
     }
 
     // PREÇO UNITÁRIO PADRÃO
@@ -341,9 +360,11 @@ function directWhatsApp(produto, sabor, massa, kg, unidades, tamanho, preco) {
         detalhes.push(
             `Quantidade: ${unidades} ${produto.id === 'cento_finos'
                 ? 'unidades'
-                : produto.precoCento
-                    ? 'cento(s)'
-                    : 'unidade(s)'
+                : produto.id === "cento_gourmet"
+                    ? "unidades"
+                    : produto.precoCento
+                        ? "cento(s)"
+                        : "unidades"
             }`
         );
     }
@@ -378,12 +399,31 @@ function directWhatsApp(produto, sabor, massa, kg, unidades, tamanho, preco) {
 
 // Encomendar carrinho WhatsApp
 function checkoutWhatsApp() {
+
+    const campoData = document.getElementById('deliveryDate');
+    const erroData = document.getElementById('dateError');
+
+    erroData.style.display = 'none';
+    campoData.classList.remove('input-error');
+
+    if (!campoData.value) {
+        erroData.textContent = 'Selecione a data para entrega ou retirada.';
+        erroData.style.display = 'block';
+        campoData.classList.add('input-error');
+        campoData.focus();
+        return;
+    }
+
+    const dataEntrega = campoData.value;
+
     if (carrinho.length === 0) {
         alert('Seu carrinho está vazio!');
         return;
     }
 
     const delivery = document.querySelector('input[name="delivery"]:checked').value;
+    const dataFormatada = new Date(dataEntrega + 'T00:00:00')
+        .toLocaleDateString('pt-BR');
     let entregaMsg = delivery === 'pickup'
         ? 'Retirada no local'
         : 'Frete (A taxa de entrega será combinada ao final do pedido no WhatsApp)';
@@ -399,12 +439,11 @@ function checkoutWhatsApp() {
             quantidadeTexto =
                 item.nome.toLowerCase().includes('doces finos')
                     ? `${item.unidades} unidades`
-                    : item.nome.toLowerCase().includes('cento')
-                        ? `${item.unidades} cento(s)`
-                        : `${item.unidades} unidades`;
+                    : quantidadeTexto = `${item.unidades} unidades`;
         }
 
-    return `${i + 1}. ${item.nome} - ${quantidadeTexto} (R$ ${item.precoTotal.toFixed(2)}) - ${item.detalhes}`;    }).join('%0A%0A');
+        return `${i + 1}. ${item.nome} - ${quantidadeTexto} (R$ ${item.precoTotal.toFixed(2)}) - ${item.detalhes}`;
+    }).join('%0A%0A');
 
     let total = carrinho.reduce((sum, i) => sum + i.precoTotal, 0);
 
@@ -412,7 +451,12 @@ function checkoutWhatsApp() {
         total += TAXA_ENTREGA;
     }
 
-    const texto = `*Pedido - Doces com Arte Maju*%0A%0A*CARRINHO:*%0A${itensMsg}%0A%0A*Total:* R$ ${total.toFixed(2)}%0A*Entrega:* ${entregaMsg}`;
+    const texto =
+        `*Pedido - Doces com Arte Maju*%0A%0A` +
+        `*Data Agendada:* ${dataFormatada}%0A%0A` +
+        `*CARRINHO:*%0A${itensMsg}%0A%0A` +
+        `*Total:* R$ ${total.toFixed(2)}%0A` +
+        `*Entrega:* ${entregaMsg}`;
 
     window.open(`https://wa.me/5561981123563?text=${texto}`, "_blank");
 }
@@ -681,9 +725,9 @@ document.getElementById('checkoutWhatsApp').addEventListener('click', checkoutWh
 // FAQ
 const faqs = [
     { pergunta: "Como faço um pedido?", resposta: "Clique em 'Personalizar' no produto desejado, escolha as opções e adicione ao carrinho ou encomende direto." },
-    { pergunta: "Vocês entregam em toda a cidade?", resposta: "Sim, entregamos. O valor do frete é calculado conforme endereço. A retirada na confeitaria é grátis mediante agendamento." },
-    { pergunta: "Com quanta antecedência devo encomendar?", resposta: "Para bolos e tortas personalizados: 5 a 7 dias. Para doces individuais e centos: 48h de antecedência." },
-    { pergunta: "Possuem opções sem glúten ou lactose?", resposta: "Sim! Temos versões adaptadas para restrições alimentares. Basta clicar no botão do whatsapp para fazer o pedido einformar as restrições." },
+    { pergunta: "Vocês entregam em toda a cidade?", resposta: "Sim, entregamos. O valor do frete é calculado conforme endereço. A retirada é grátis mediante agendamento." },
+    { pergunta: "Com quanta antecedência devo encomendar?", resposta: "Com 5 dias de antecedência." },
+    { pergunta: "Possuem opções diet, sem glúten ou lactose?", resposta: "Sim! Temos versões adaptadas para restrições alimentares. Basta encomendar o produto com restrições, adicionar ao carrinho e clicar no botão de encomendar via whatsapp para fazer o pedido e informar as restrições no final do pedido." },
     { pergunta: "Formas de pagamento?", resposta: "Aceitamos PIX e dinheiro." }
 ];
 
@@ -701,11 +745,32 @@ function renderFaq() {
     });
 }
 
+function configurarDataMinima() {
+    const campoData = document.getElementById('deliveryDate');
+
+    if (!campoData) return;
+
+    const hoje = new Date();
+    hoje.setDate(hoje.getDate() + 5);
+
+    const ano = hoje.getFullYear();
+    const mes = String(hoje.getMonth() + 1).padStart(2, '0');
+    const dia = String(hoje.getDate()).padStart(2, '0');
+
+    campoData.min = `${ano}-${mes}-${dia}`;
+}
+
 // Inicialização
 renderCategoryTabs();
 renderProducts();
 renderFaq();
 loadCartFromStorage();
+configurarDataMinima();
+
+document.getElementById('deliveryDate').addEventListener('change', () => {
+    document.getElementById('dateError').style.display = 'none';
+    document.getElementById('deliveryDate').classList.remove('input-error');
+});
 
 // Scroll e menu
 window.addEventListener('scroll', () => {
