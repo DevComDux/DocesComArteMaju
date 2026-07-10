@@ -5,7 +5,7 @@ const produtosCompletos = [
     { id: "torta_tradicional", nome: "Torta Tradicional", precoKg: 65, categoria: "tortas", imagens: ["assets/img/5.jpg", "assets/img/6.jpg", "assets/img/7.jpg"], temMassa: true, temKg: true, sabores: ["BRIGADEIRO", "PRESTÍGIO", "DOIS BRIGADEIROS", "ABACAXI C BRIGADEIRO BRANCO", "PÊSSEGO COM BRIGADEIRO BRANCO", "AMEIXA COM BRIGADEIRO BRANCO"] },
     { id: "torta_trufada", nome: "Torta Trufada", precoKg: 75, categoria: "tortas", imagens: ["assets/img/8.jpg", "assets/img/9.jpg", "assets/img/10.jpg", "assets/img/11.jpg"], temMassa: true, temKg: true, sabores: ["NEUTRO (SEM OVO E SEM LEITE)", "MESCLADA DE MARSHMALLOW COM BABA DE MOÇA", "STROGONOFF DE DAMASCO", "STROGONOFF DE NOZES", "STROGONOFF DE CASTANHA PARÁ", "TRUFADA DOIS AMORES (CHOCOLATE BRANCO E PRETO)", "CHOCOLATE BRANCO COM MORANGO", "CARAMELO COM MORANGO", "CARAMELO COM CASTANHA PARÁ", "CREAM CHEESE", "TRUFADO BRIGADEIRO CROCANTE DE AMENDOIM", "TRUFADO DE LEITE NINHO", "LEITE NINHO COM MORANGO", "LEITE NINHO COM NUTELLA", "LEITE NINHO COM ABACAXI", "LEITE NINHO COM FLOCOS DE CHOCOLATE", "4 LEITES", "TORTA XADREZ", "AMEIXA COM DOCE DE LEITE", "SONHO DE VALSA", "OURO BRANCO", "ALPINO", "SUFLAIR", "FLORESTA NEGRA", "NEGRESCO", "OREO", "BABA DE MOÇA COM OU SEM FRUTAS", "FRUTAS VERMELHAS", "FRUTAS AMARELAS", "FRUTAS VERDES", "CHANTININHO"] },
     { id: "tortas_famosas", nome: "Tortas Famosas e Personalizadas", precoBase: 80, categoria: "tortas", imagens: ["assets/img/12.jpg", "assets/img/13.jpg", "assets/img/14.jpg"], temMassa: true, temKg: true, sabores: ["KIT KAT", "FERREIRO ROCHÊ", "RED VELVET", "DIET", "SEM GLÚTEN", "SEM LACTOSE", "NAD CAKE", "PASTA AMERICANA", "PASTA LEITE NINHO"], precosEspeciais: { "KIT KAT": 80, "FERREIRO ROCHÊ": 80, "DIET": 80, "SEM GLÚTEN": 80, "SEM LACTOSE": 80, "NAD CAKE": 95, "PASTA AMERICANA": 130, "PASTA LEITE NINHO": 130 } },
-    { id: "bolo_tradicional", nome: "Bolo Tradicional Decorado", precoKg: 65, categoria: "tortas", imagens: ["assets/img/15.jpg", "assets/img/16.jpg", "assets/img/17.jpg"], temMassa: true, temKg: true, sabores: ["BRIGADEIRO", "PRESTÍGIO", "DOIS BRIGADEIROS", "ABACAXI C BRIGADEIRO BRANCO", "PÊSSEGO COM BRIGADEIRO BRANCO", "AMEIXA COM BRIGADEIRO BRANCO"] },
+    { id: "bolo_tradicional", nome: "Bolo Decorado", precoKg: 65, categoria: "tortas", imagens: ["assets/img/15.jpg", "assets/img/16.jpg", "assets/img/17.jpg"], temMassa: true, temKg: true, sabores: ["BRIGADEIRO", "PRESTÍGIO", "DOIS BRIGADEIROS", "ABACAXI C BRIGADEIRO BRANCO", "PÊSSEGO COM BRIGADEIRO BRANCO", "AMEIXA COM BRIGADEIRO BRANCO"] },
     { id: "bolo_especial", nome: "Bolo Especial", precoKg: 75, categoria: "bolos", imagens: ["assets/img/18.jpg", "assets/img/19.jpg", "assets/img/20.jpg"], temMassa: true, temKg: true, sabores: ["NEUTRO (SEM OVO E SEM LEITE)", "MESCLADA DE MARSHMALLOW COM BABA DE MOÇA", "STROGONOFF DE DAMASCO", "STROGONOFF DE NOZES", "STROGONOFF DE CASTANHA PARÁ", "TRUFADA COM DOIS CHOCOLATES (BRANCO E PRETO)", "CHOCOLATE BRANCO COM MORANGO", "CARAMELO COM MORANGO", "CARAMELO COM CASTANHA PARÁ", "CREAM CHEESE", "TRUFADO BRIGADEIRO CROCANTE DE AMENDOIM", "TRUFADO DE LEITE NINHO", "LEITE NINHO COM MORANGO", "LEITE NINHO COM NUTELLA", "LEITE NINHO COM ABACAXI", "LEITE NINHO COM FLOCOS DE CHOCOLATE", "4 LEITES", "TORTA XADREZ", "AMEIXA COM DOCE DE LEITE", "SONHO DE VALSA", "OURO BRANCO", "ALPINO", "SUFLAIR", "FLORESTA NEGRA", "NEGRESCO", "OREO", "BABA DE MOÇA COM OU SEM FRUTAS", "FRUTAS VERMELHAS", "FRUTAS AMARELAS", "FRUTAS VERDES", "CHANTININHO"] },
     { id: "sobremesas", nome: "Sobremesas", precoKg: 85, categoria: "sobremesas", imagens: ["assets/img/21.jpg", "assets/img/22.jpg", "assets/img/23.jpg"], temMassa: false, temKg: true, sabores: ["BANOFFE", "DELÍCIA DE UVA VERDE", "SENSAÇÃO DE MORANGO"] },
     { id: "cento_gourmet", nome: "Doces Gourmet", precoUnit: 1.80, categoria: "doces", imagens: ["assets/img/24.jpg", "assets/img/25.jpg", "assets/img/26.jpg", "assets/img/27.jpg"], temUnidades: true, unidadesPersonalizadas: [25, 50, 100], sabores: ["BRIGADEIRO 50% CACAU", "MENTA", "CAFÉ", "CAJUZINHO", "BEIJINHO", "OLHO DE SOGRA", "CHURROS", "CARAMELO", "CASADINHO", "NAPOLITANO", "ROMEU JULIETA QUEIJO COM GOIABADA", "MORANGO", "LARANJA", "LIMÃO", "MARACUJÁ", "NEGRESCO", "OVOMALTINE", "LEITE NINHO", "LEITE NINHO COM NUTELLA"] },
@@ -208,18 +208,18 @@ function openProductModal(produto) {
     massaGroup.style.display = produto.temMassa ? 'block' : 'none';
 
     // Cobertura e decoração para bolos/tortas
-    const coberturaGroup = document.getElementById('coberturaGroup');
-    const decoracaoBoloGroup = document.getElementById('decoracaoBoloGroup');
+    // const coberturaGroup = document.getElementById('coberturaGroup');
+    // const decoracaoBoloGroup = document.getElementById('decoracaoBoloGroup');
 
-    const mostrarExtras =
-        produto.categoria === 'bolos' ||
-        produto.categoria === 'tortas';
+    // const mostrarExtras =
+    //     produto.categoria === 'bolos' ||
+    //     produto.categoria === 'tortas';
 
-    coberturaGroup.style.display = mostrarExtras ? 'block' : 'none';
-    decoracaoBoloGroup.style.display = mostrarExtras ? 'block' : 'none';
+    // coberturaGroup.style.display = mostrarExtras ? 'block' : 'none';
+    // decoracaoBoloGroup.style.display = mostrarExtras ? 'block' : 'none';
 
-    document.getElementById('coberturaSelect').required = mostrarExtras;
-    document.getElementById('decoracaoBoloSelect').required = mostrarExtras;
+    // document.getElementById('coberturaSelect').required = mostrarExtras;
+    // document.getElementById('decoracaoBoloSelect').required = mostrarExtras;
 
     // KG
     const kgGroup = document.getElementById('kgGroup');
@@ -350,10 +350,10 @@ function directWhatsApp(produto, sabor, massa, kg, unidades, tamanho, preco) {
 
     if (sabor) detalhes.push(`Sabor: ${sabor}`);
     if (massa) detalhes.push(`Massa: ${massa}`);
-    if (cobertura) detalhes.push(`Cobertura: ${cobertura}`);
+    // if (cobertura) detalhes.push(`Cobertura: ${cobertura}`);
 
-    if (decoracaoBolo)
-        detalhes.push(`Decoração: ${decoracaoBolo}`);
+    // if (decoracaoBolo)
+    //     detalhes.push(`Decoração: ${decoracaoBolo}`);
     if (kg) detalhes.push(`Quantidade: ${kg} KG`);
 
     if (unidades) {
@@ -618,17 +618,17 @@ document.getElementById('productForm').addEventListener('submit', (e) => {
         ? document.getElementById('massaSelect').value
         : null;
 
-    const cobertura =
-        produto.categoria === 'bolos' ||
-            produto.categoria === 'tortas'
-            ? document.getElementById('coberturaSelect').value
-            : null;
+    // const cobertura =
+    //     produto.categoria === 'bolos' ||
+    //         produto.categoria === 'tortas'
+    //         ? document.getElementById('coberturaSelect').value
+    //         : null;
 
-    const decoracaoBolo =
-        produto.categoria === 'bolos' ||
-            produto.categoria === 'tortas'
-            ? document.getElementById('decoracaoBoloSelect').value
-            : null;
+    // const decoracaoBolo =
+    //     produto.categoria === 'bolos' ||
+    //         produto.categoria === 'tortas'
+    //         ? document.getElementById('decoracaoBoloSelect').value
+    //         : null;
 
     const kg = produto.temKg
         ? document.getElementById('kgSelect').value
@@ -654,11 +654,11 @@ document.getElementById('productForm').addEventListener('submit', (e) => {
     if (sabor) detalhes.push(`Sabor: ${sabor}`);
     if (massa) detalhes.push(`Massa: ${massa}`);
 
-    if (cobertura) detalhes.push(`Cobertura: ${cobertura}`);
+    // if (cobertura) detalhes.push(`Cobertura: ${cobertura}`);
 
-    if (decoracaoBolo) {
-        detalhes.push(`Decoração: ${decoracaoBolo}`);
-    }
+    // if (decoracaoBolo) {
+    //     detalhes.push(`Decoração: ${decoracaoBolo}`);
+    // }
 
     if (tamanho) {
         detalhes.push(`Tamanho: ${tamanho}`);
